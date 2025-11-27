@@ -124,8 +124,7 @@
                         const formData = new FormData(this);
                         
                         // ССЫЛКА НА ВЕБХУК
-                        const webhookUrl = 'http://n8n.167.86.85.91.sslip.io/webhook/lead';
-
+const webhookUrl = '/api/send-lead';
                         const finalUrl = webhookUrl + '?name=' + encodeURIComponent(formData.get('name')) + '&phone=' + encodeURIComponent(formData.get('phone'));
 
                         fetch(finalUrl, {
