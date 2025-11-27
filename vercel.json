@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/send-lead",
+      "destination": "http://n8n.167.86.85.91.sslip.io/webhook/lead"
+    }
+  ]
+}
